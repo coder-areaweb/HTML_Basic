@@ -1,0 +1,78 @@
+@font-face {
+    font-family: Akrobat;
+    font-weight: 300;
+    src: url("../fonts/akrobat/Akrobat-Light.eot") format("eot"),
+        url("../fonts/akrobat/Akrobat-Light.ttf") format("ttf"),
+        url("../fonts/akrobat/Akrobat-Light.woff") format("woff"),
+        url("../fonts/akrobat/Akrobat-Light.woff2") format("woff2");
+}
+@font-face {
+    font-family: Akrobat;
+    font-weight: 400;
+    src: url("../fonts/akrobat/Akrobat-Regular.eot") format("eot"),
+        url("../fonts/akrobat/Akrobat-Regular.ttf") format("ttf"),
+        url("../fonts/akrobat/Akrobat-Regular.woff") format("woff"),
+        url("../fonts/akrobat/Akrobat-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: Akrobat;
+    font-weight: 700;
+    src: url("../fonts/akrobat/Akrobat-Bold.eot") format("eot"),
+        url("../fonts/akrobat/Akrobat-Bold.ttf") format("ttf"),
+        url("../fonts/akrobat/Akrobat-Bold.eot") format("woff"),
+        url("../fonts/akrobat/Akrobat-Bold.eot") format("woff");
+}
+@font-face {
+    font-family: Akrobat;
+    font-weight: 900;
+    src: url("../fonts/akrobat/Akrobat-Black.eot") format("eot"),
+        url("../fonts/akrobat/Akrobat-Black.ttf") format("ttf"),
+        url("../fonts/akrobat/Akrobat-Black.woff") format("woff"),
+        url("../fonts/akrobat/Akrobat-Black.woff2") format("woff2");
+}
+
+
+p {
+    /*���� ������*/
+    color: rgba(37,188,57, 0.8);
+    /*color: green; */
+    /*color:#25BC39;*/
+
+    /*����� ������*/
+    font-family: Akrobat;
+
+    /*������ ������*/
+    font-size: 30px;
+
+    /*����� ����������(������)*/
+    font-style:italic;
+
+    /*������� ������*/
+    font-weight: 400;
+
+    /*����������� ��������*/
+    line-height:10px;
+
+    /*��������� ������*/
+    text-align:left;
+    /*text-align:center;*/
+    /*text-align:right;*/
+
+    /*�������������, ������������, �������������*/
+    /* text-decoration:underline;*/
+    /* text-decoration:overline; */
+    text-decoration:line-through;
+
+    /*������ � ������ ������ ������*/
+    text-indent: 20px;
+
+    /*���� ������*/
+    /* text-shadow: 8px 8px 3px rgba(0,0,0,0.5), 11px 11px 3px red; */
+    text-shadow: 8px 8px 3px rgba(0,0,0,0.3);
+
+    /*���������, �������� �����*/
+    /* text-transform:uppercase; */
+    /*text-transform:capitalize; */
+    text-transform:lowercase;
+
+}

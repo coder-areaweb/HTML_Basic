@@ -1,0 +1,14 @@
+/* װמנלאעû פאיכמג רנטפעמג: woff, woff2, eot, ttf */
+
+@font-face {  
+    font-family: Aquarelle;
+    src:url("../fonts/aquarelle.woff") format("woff"),
+        url("../fonts/aquarelle.woff2") format("woff2"),
+        url("../fonts/aquarelle.eot") format("eot"),
+        url("../fonts/aquarelle.ttf") format("ttf");   
+}
+@import url('https://fonts.googleapis.com/css?family=Caveat');
+
+h1 {
+    font-family: 'Caveat', cursive;
+}

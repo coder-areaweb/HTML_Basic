@@ -1,0 +1,47 @@
+.block_1 {
+    background: blue;
+    border:1px solid;
+    height:400px;
+    width:400px;
+}
+.block_2 {
+    background: url("../images/background.png");
+    border:1px solid;
+    height:400px;
+    width:400px;
+}
+.block_3 {
+    background: url("../images/zima_smal.jpg") no-repeat blue;
+    border:1px solid;
+    height:400px;
+    width:400px;
+}
+.block_4{
+    background: url("../images/zima_smal.jpg") no-repeat right top;
+    border:1px solid;
+    height:400px;
+    width:400px;
+}
+.block_5{
+    background: url("../images/zima_smal.jpg") no-repeat, url("../images/background.png");
+    border:1px solid;
+    height:400px;
+    width:400px;
+}
+.block_6{
+    /* background: url("../images/zima_small2.jpg") no-repeat left top/contain; */
+    background-image: url("../images/zima_smal2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:contain; /* ���� cover */
+    border:1px solid;
+    height:400px;
+    width:400px;
+}
+.block_7{
+    box-shadow: 5px 5px 4px grey, 8px 8px 4px red;
+    border:1px solid;
+    height:400px;
+    width:400px;
+    margin:20px;
+}

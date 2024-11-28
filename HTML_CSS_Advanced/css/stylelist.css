@@ -1,0 +1,28 @@
+ul.list_1 li {
+    color:blue;
+    font-size:35px;
+    list-style-type:disc;
+    /* list-style-type:circle; */
+    /* list-style-type:square; */
+    /* list-style-type:decimal; */
+    /* list-style-type:lower-roman; */
+    /* list-style-type:upper-roman; */
+    /* list-style-type:lower-alpha; */
+    /* list-style-type:upper-alpha; */
+    /* list-style-type:lower-greek; */
+
+    /* list-style-image: url("../images/icon.png"); */
+}
+ul.list_1 li span {
+    color:#000;
+}
+ul.menu li {
+    font-size:40px;
+    list-style-type: none;
+    font-family: Calibri;
+    list-style-image:url("../images/icon2.png");
+}
+ul.menu li a {
+    text-decoration:none;
+    color:#000;
+}

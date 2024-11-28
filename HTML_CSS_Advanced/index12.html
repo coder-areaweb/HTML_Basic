@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Моя первая HTML-страница</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="моя страница, html-страница, web-документ" />
+    <meta name="description" content="Моя первая HTML-страница" />
+    <link rel="shortcut icon" type="image/png" href="css.png" />
+    <link rel="stylesheet" type="text/css" href="css/text.css"/>
+</head>
+<body>
+    <h1>Мой первый текстовый заголовок</h1>
+    <img src="/home/athlet/Desktop/[Udemy] Эффективный курс по HTML и CSS/сайт/images/fontfamily.jpg">
+    <ul><li>Антиква (серифный) - с засечкой</li></ul>
+    <ul><li>Гротески (рубленный) - без засечек</li></ul>
+<hr>
+<h2>Подключение шрифтов с помощью @font-face:</h2>
+<ul><li>загружаем сам файл шрифта с помощью правила @font-face</ul></li>
+<ul><li>внутри него пишем название гарнитуры шрифта через параметр font-family и путь к файлу через src</ul></li>
+<ul><li>место хранение в паке fonts</ul></li>
+<h3>Пример</h3>
+@font-face {
+  font-family: "Roboto"; /* Гарнитура шрифта */
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Roboto"),
+       /* Если не получилось, загрузит woff2 */
+       url("/fonts/roboto.woff2") format("woff2"),
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       url("/fonts/roboto.woff") format("woff");
+}
+/* Теперь можно использовать шрифт */
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+<h2>Подключение шрифтов с помощью Google Fonts (нестандартный шрифт)<h2>
+
+<h3>Пример</h3>
+<ul><li>Подключить шрифт с внешнего ресурса в HTML документе</ul></li>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,700;1,500&display=swap"
+  rel="stylesheet"
+/>
+<h3>Пример1</h3>
+<ul><li>Через правило @import. Такую строку вставляем в свой CSS-файл в самом верху:</ul></li>
+@import url(http://fonts.googleapis.com/css?family=Philosopher&subset=cyrillic);
+@import url("https://fonts.googleapis.com/css2family=Playfair+Display&display=swap");
+<ul><li>Через JavaScript</ul></li>
+<h2>Подключение шрифта с помощью встроенных шрифтов (с помощью CSS-правил)</h2><br>
+<h3>Пример</h3>
+body {
+font-family: "Arial", sans-serif;
+}
+<h2>ПОДКЛЮЧИТЬ ШРИФТ К ШАБЛОНУ MOGUTA.CMS ИЛИ ДРУГОЙ CMS</h2>
+<ul><li>Через хостинг загрузить необходимый шрифт в папку /mg-templates/mg-default/fonts</ul></li>
+<ul><li>Через административную панель открыть файл стилей</ul></li>
+<ul><li>Прописать в самом верху новый шрифт</ul></li>
+<ul><li>Ниже в файле стилей найти интересующий нас элемент и задать или изменить свойство font-family: *название нового шрифта*</ul></li>
+<h2>ДОБАВИТЬ ССЫЛКУ С GOOGLE FONTS В ШАБЛОН MOGUTA CMS</h2>
+<ul><li>Заходим Настройки—>Шаблон—>template.php</ul></li>
+<ul><li>Перед закрывающим тегом head вставляем ссылку сгенерированную гуглом</ul></li>
+<ul><li>Затем в файле стилей задаём новый шрифт к нужному элементу</ul></li>
+<hr><br>
+<h2>Форматы шрифтов</h2>
+<ul><li>EmbeddedOpenType (EOT) – формат шрифта полезный для рендера шрифтов в старых версиях IE. Если вам не нужно поддерживать IE8 и ниже, то лучше отказаться от этого формата.
+<ul><li>TrueType (TTF) – формат шрифта полезный для расширения поддержки старых браузеров, особенно мобильных при необходимости.
+<ul><li>Scalable Vector Graphics (SVG) - формат векторного воссоздания шрифта. Это единственный подходящий формат для мобильных версий браузера Safari версии 4.1 и ниже. Шрифты SVG в настоящее время не поддерживаются другими браузерами.
+<ul><li>Web Open Font Format (WOFF) - формат-обертка для шрифтов True Type и Open Type. Формат сжимает файлы шрифтов и поддерживается во всех современных браузерах.
+<ul><li>Web Open Font Format 2 (WOFF2) обновление для оригинального формата WOFF. Обеспечивает меньший размер файлов и лучшую производительность в современных браузерах.
+<hr>
+<h2>Какой формат использовать?<h2>
+<ul><li>Если ваша целевая аудитория использует современные браузеры, вы можете использовать @font-face, используя форматы шрифтов WOFF и WOFF2. <br>
+Эти форматы обеспечивают хорошее сжатие и позволяют работать с меньшим количеством файлов в коде.</ul></li><br>
+<ul><li>Если аналитика сайта подсказывает вам, что среди пользователей немалый % использует устаревшие версии браузеров, можете включить файлы EOT и TTF.<br>
+Так же для расширения браузерной поддержки могут пригодиться шрифты SVG формата.</ul></li>
+<h2>Паттерны загрузки веб-шрифтов (Font Face Observer, простая и небольшая библиотека загрузки веб-шрифтов)</h2>
+<ul><li>Обычная загрузка шрифтов</ul></li>
+<ul><li>Загрузка группы шрифтов</ul></li>
+<ul><li>Загрузка шрифтов с таймером</ul></li>
+<ul><li>Приоритетная загрузка</ul></li>
+<ul><li>Особое отображение шрифтов</ul></li>
+<ul><li>Оптимизация для кэширования</ul></li><br>
+<h2>Тень бывает:
+<ul>
+<li>Тень на тексте:text-shadow</li>
+<li>Тень на элементе:box-shadow</li>
+</ul>
+</h2>
+<h2>Стилизация углов и стилизация списков
+  <ul>
+  <li>border-radius</li>
+  <li>list-style-type</li>
+  </ul>
+</h2>
+</body>
+</html>

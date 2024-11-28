@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Basics</title>
+</head>
+<body>
+
+  <!-- Simple image -->
+    <!--<img src="https://picsum.photos/300/300" alt="Just image">-->
+
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.jFdCVvkWlNKUtdwBYov6-gHaD4%26pid%3DApi&f=1&ipt=322b8e3067a9644f2b6ee836ab7e48fe02f56ce8b5e7dc1478dc04380f6e8ca0&ipo=images" alt="TUTU">
+
+  <!-- Responsive image -->
+  <picture>
+    <source media="(min-width: 1024px)" srcset="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.9FYJs3j8B8mPi1drXYGkhgHaDJ%26pid%3DApi&f=1&ipt=703cc34c106d630f8f1c52f6e39619b1cc39f07ab50b439d8e6822181a54b319&ipo=images/600/600">
+    <source media="(min-width: 768px)" srcset="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.9FYJs3j8B8mPi1drXYGkhgHaDJ%26pid%3DApi&f=1&ipt=703cc34c106d630f8f1c52f6e39619b1cc39f07ab50b439d8e6822181a54b319&ipo=images/300/300">
+    <source media="(min-width: 360px)" srcset="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.9FYJs3j8B8mPi1drXYGkhgHaDJ%26pid%3DApi&f=1&ipt=703cc34c106d630f8f1c52f6e39619b1cc39f07ab50b439d8e6822181a54b319&ipo=images/100/100">
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.jFdCVvkWlNKUtdwBYov6-gHaD4%26pid%3DApi&f=1&ipt=322b8e3067a9644f2b6ee836ab7e48fe02f56ce8b5e7dc1478dc04380f6e8ca0&ipo=images/300/300" alt="TuTu">
+  </picture>
+
+  <!-- Image with semantic description -->
+  <figure>
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.i8R7Vo4fDuL-xcQ0BikNgAAAAA%26pid%3DApi&f=1&ipt=d30c1aa23dea3b84f33c116ec8218cf2806c688a904ab0f02a5192009caf5ff6&ipo=images/300/300" alt="Just image" />
+    <figcaption>It is a simple description for a picture above</figcaption>
+  </figure>
+
+  <!-- Images with semantic description -->
+  <figure>
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.i8R7Vo4fDuL-xcQ0BikNgAAAAA%26pid%3DApi&f=1&ipt=d30c1aa23dea3b84f33c116ec8218cf2806c688a904ab0f02a5192009caf5ff6&ipo=images" alt="Just image" />
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.i8R7Vo4fDuL-xcQ0BikNgAAAAA%26pid%3DApi&f=1&ipt=d30c1aa23dea3b84f33c116ec8218cf2806c688a904ab0f02a5192009caf5ff6&ipo=images" alt="Just image" />
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.i8R7Vo4fDuL-xcQ0BikNgAAAAA%26pid%3DApi&f=1&ipt=d30c1aa23dea3b84f33c116ec8218cf2806c688a904ab0f02a5192009caf5ff6&ipo=images/300/300" alt="Just image" />
+    <figcaption>
+      <p>It is a simple description for a couple pictures above.It is a simple description for a couple pictures above.It is a simple description for a couple pictures above</p>
+    </figcaption>
+  </figure>
+
+</body>
+</html>

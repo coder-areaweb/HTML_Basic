@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+<!-- Мета-теги — это элементы в HTML-коде, которые нужны, чтобы сообщить поисковым системам информацию о содержимом страницы -->
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<!-- для SEOм описываем ключевые слова -->
+      <meta name="keywords" content="моя страница, html-страница, web-документ">
+<!-- для SEOм делаем описание страницы сайта в результатах поиска. Гугл уже не использует -->
+      <meta name="description" content="моя первая html-страница">
+<!--
+Meta name
+Robots <meta name=”Robots” content= />
+выполняют функцию схожую с robots.txt — сообщает поисковым роботам, что именно делать с контентом сайта
+Document-state
+<meta name=”Document-state” content= />
+указывается, стоит ли поисковой сисеме повторно индексировать страницу
+Revisit
+<meta name=”Revisit” content= />
+дает поисковым системам понять, как часто следует индексировать сайт
+Author
+<meta name=”Author” content= />
+автор сайта может оставить свою неприметную подпись
+-->
+
+<!--
+фавикон на сайт
+Размер задать можно: атрибутом sizes
+<link rel="icon" type="image/ico" sizes="16x16" href="/icons/favicon.ico">
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+<link rel="shortcut icon" href="/images/favicon.jpeg" type="image/jpeg">
+<link rel="shortcut icon" href="/images/favicon.svg" type="image/svg">
+Разные иконки для разделов:
+<link rel="icon" href="http://ваш-сайт.ru/путь_к_иконке/favicon_blog.ico" type="image/ico">
+Фавикон для Android:
+файл .png размером 180x180
+спецификацию Web App Manifest (простой JSON-файл)
+<link rel="manifest" href="/manifest.json">
+Фавикон для Apple
+Для iOS файл .png иногда используют размер 57x57
+файл .png размером 180x180
+спецификацию в Safari такие называются Web Clips
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+-->
+
+<link rel="shortcut icon" type="image/png" href="html.png" />
+      <title>
+         Моя первя HTML-страница
+      </title>
+   </head>
+   <body>
+	<h1>Моя первая html-страница</h1>
+	<p>Мой первый абзац</p><br>
+<h1>Моя первая html-страница H1</h1>
+<h2>Моя первая html-страница H2</h2>
+<h3>Моя первая html-страница H3</h3>
+<h4>Моя первая html-страница H4</h4>
+<h5>Моя первая html-страница H5</h5>
+<h6>Моя первая html-страница H6</h6>
+<h2>Тэг(элемент) бывает:</h2>
+<ul>
+    <li>Откравающим</li>
+    <li>Закрывающим</li>
+    <li>Одиномным(пустым)</li>
+</ul>
+<h2>Тэгсостоит из:
+  <ul>
+      <li>Элеменета(Названия)</li>
+      <li>Атрибута(Свойства)</li>
+  </ul>
+</h2>
+<h2>Тэги в структуре^
+  <ul>
+      <li>Строчные(inline)</li>
+      <li>Блочные(block)</li>
+      <li>Строчно-блочные(inline-block)</li>
+<p>С появлением CSS3 стало возможным не вручную указывать, а правилом:<br>
+box-sizing
+</p>
+  </ul>
+</h2>
+<h2></h2>
+<h2></h2>
+   </body>
+</html>

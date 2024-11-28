@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Моя первая HTML-страница</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="моя страница, html-страница, web-документ">
+	<meta name="description" content="моя первая html-страница">
+	<link rel="shortcut icon" type="image/png" href="css.png" />
+	<link rel="stylesheet" type="text/css" href="css/count.css"/>
+</head>
+	<body>
+  <h2>Абсолютные единицы измерения:используются при печати документов</h2>
+      <p class="px">30px Пиксель, может быть разным в зависимости от экрна 1px=1/96in of 1in</p>
+      <p class="cm">2cm Сантиметр 1cm=38px=1,005417cm 1cm=96px=2,54cm. <br>
+					<p>Пиксель -это точка, 1точка(dot)=72/96dpi (dot per inch) 1dpi=0,39dpcm<br>
+							dpcm-плотность пикселей в точках на см 1dpcm=2,54dpi<br>
+							dppx, x- описывает плотность в точках на px, поскольку соотношение in and px равно 1/96 1dppx=96dpi
+					</p>
+			</p>
+			<p class="mm">200mm Миллиметров 1mm=3,8px 1mm=1/10cm 10mm=1cm</p>
+      <p class="in">3in Дюйм 1in=2,54cm=25.4mm=72pt=6pc </p>
+      <p class="pt">8pt Пункт 1pt=0,35mm|1/72 of 1in| 1pt= 4/3px он же Кегель - размер типографического шрифта</p>
+      <p class="pc">2pc Пики 1pc=12pt| 1pc=16px | 1pc=1/16in</p>
+
+  <h2>Относительные единицы измерения:используются для мониторов</h2>
+      <p class="em"><span>Единица</span> измерения в em 1em=10px (высота шрифта текущего элемента для которого он свой)| 1em=100%</p>
+      <p class="percent">Единица измерения в процентах. процент и em схожи</p>
+			<p class="ex">Единица измерения в 6ex задает величину относительно метрики шрифта (расстояние между base line and middle line строчных букв x-height)</p>
+			<p class="rem">Новая единица измерения 13 rem 1rem=16px (от корневого em или корневого эл-та em, но в отличии от em он оди и то же для всего документа)</p><br/>
+	<h2>Viewport = the browser windows size</h2>
+      <p class="vh">Размер шрифта 5VH Задает размер в % от выстоты viewport height(вьюпорт) 1vh=1% от высоты</p>
+      <p class="vw">Размер шрифта 8VW Задает размер в % от ширины viewport width(вьюпорт) 1vw=1% от ширины, например 1vm=50cm wide 1vm=0,5cm</p>
+      <p class="vmin">Размер шрифта 7Vmin 1vmin=1% от меньшей стороны viewport(вьюпорт).Размер в % от меньшей размерности вьюпорта</p>
+      <p class="vmax">Размер шрифта 11Vmax 1vmax=1% от большей стороны viewport(вьюпорт).Размер в % от большей размерности вьюпорта</p>
+<hr>
+<table><col><col><col><col>
+    <thead>
+     <tr>
+      <th>
+      <th>Ре­ко­мен­ду­ются
+      <th>Мож­но ино­гда
+      <th>Не ре­ко­мен­ду­ются
+    <tbody>
+     <tr>
+      <th>Экран
+      <td>em, px, %
+      <td>ex
+      <td>pt, cm, mm, in, pc
+     <tr>
+      <th>Печать
+      <td>em, cm, mm, in, pt, pc, %
+      <td>px, ex
+      <td>
+   </table>
+<hr>
+<img src="/home/athlet/Desktop/[Udemy] Эффективный курс по HTML и CSS/сайт/images/1.jpg">
+<img src="/home/athlet/Desktop/[Udemy] Эффективный курс по HTML и CSS/сайт/images1.1.jpg">
+<img src="/home/athlet/Desktop/[Udemy] Эффективный курс по HTML и CSS/сайт/images/1.2.png">
+<img src="/home/athlet/Desktop/[Udemy] Эффективный курс по HTML и CSS/сайт/images/2.jpg">
+<img src="/home/athlet/Desktop/[Udemy] Эффективный курс по HTML и CSS/сайт/images/3.png">
+<img src="/home/athlet/Desktop/[Udemy] Эффективный курс по HTML и CSS/сайт/images/3.1.png">
+	</body>
+</html>

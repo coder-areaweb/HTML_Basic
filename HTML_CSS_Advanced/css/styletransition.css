@@ -1,0 +1,54 @@
+div {
+    margin:60px auto;
+}
+.block_1 {
+    background:red;
+    height:150px;
+    width:150px;
+}
+.block_1_t {
+    background:blue;
+    height:150px;
+    width:150px;
+    transition:1s;
+    /*transform-origin:top left;*/
+}
+.block_1_t:hover {
+    transform:rotate(50deg);
+}
+.block_2_t {
+    background:green;
+    height:150px;
+    width:150px;
+    transition:1s;
+}
+.block_2_t:hover {
+    transform:translate(20px, 40px);
+}
+.block_3_t {
+    background:orange;
+    height:150px;
+    width:150px;
+    transition:1s;
+}
+.block_3_t:hover {
+    transform:scale(1.5);
+}
+.block_4_t {
+    background:gray;
+    height:150px;
+    width:150px;
+    transition:1s;
+}
+.block_4_t:hover {
+    transform:skewY(15deg);
+}
+.block_5_t {
+    background:#000;
+    height:150px;
+    width:150px;
+    transition:1s;
+}
+.block_5_t:hover {
+    transform:rotate(360deg) scale(2);
+}

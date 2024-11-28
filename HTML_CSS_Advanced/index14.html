@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Моя первая HTML-страница</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="моя страница, html-страница, web-документ">
+	<meta name="description" content="моя первая html-страница">
+	<link rel="shortcut icon" type="image/png" href="css.png" />
+	<link rel="stylesheet" type="text/css" href="css/styletext.css"/>
+</head>
+	<body>
+    <p>Мой первый текстовый абзац со стилевым оформлением</p>
+		<h1>Изменить цвет можно:</h1>
+				<ul><li>Текст color: red</li></ul>
+				<ul><li>Фон background-color</li></ul>
+				<ul><li>С помощью зн-й: values (RGB/HEX/HSL/RGBA/HSL/HSLA)</li></ul>
+				<ul><li>С помощью зн-й: values (HWB/LCH/LAB)</li></ul>
+				<ul><li>Color names исползуя предопределенное имя цвета color: red/lightgray </li></ul>
+												<h2>Шестнадцатеричная система счисления:</h2>
+												<ul><li>от 0-9 #000000 (black)</li></ul>
+												<ul><li>от A-F #FFFFFF (white)</li></ul>
+												<ul><li># означает НЕХ значение цвета</li></ul>
+								<ul><li>Цвет текст в формате 16-и системе исчесления (HEX) color: #77cc00</li></ul>
+				<ul><li>Цвет текст в формате 16-и системе исчесления сокращенной (HEX) color: #7c0</li></ul>
+				<img src="/home/athlet/Desktop/сайт/images/HEX.jpg">
+				<ul><li>Цвет текст в формате RGB (Red Green Blue)/(#RRGGBB) color: rgb(37,188,57)</li></ul>
+				<ul><li>Цвет текст в формате RGBA ed Green Blue Alpha) color: rgba(37,188,57, 0.8)</li></ul>
+				<ul><li>Web-цвета зависят от цветопередачи монитора и принимают 1 из 6 зн-й: 0(00)/51(33)/102(66)/153(99)/204(СС)/255(FF)<br>
+				Может применять 0-255 оттенков R+G+B=R(256)*G(256)*B(256)=16,777,216 комбинаций</li></ul>
+
+				<h2>Другое использование:</h2>
+<ul>
+<li>Наименованные цвета:используются в макетах</li>
+<li>RGB and HEX:верстка</li>
+<li>LAB и LCH определены в спецификации как цвета, не зависящие от устройства</li>
+<img src="/home/athlet/Desktop/сайт/images/LAB.png">
+<img src="/home/athlet/Desktop/сайт/images/LCH.jpg">
+</ul>
+<h2>RGB методы:</h2>
+<ul>
+<li>Аддитивное смешение цветов - сложение цветов непосредственно излучающих объектов (смешивание лучей света)</li>
+<li>Субтрактивное смешение цветов получение цвета путем вычитания из спектрально-равномерного белого света отдельных спектральных составляющих (вычитании элементов друг из друга)</li>
+</ul>
+<img src="/home/athlet/Desktop/сайт/images/rgb.jpg">
+
+												<h2>HSL расшифровка (создать свой цвет или подобрать):</h2>
+												<img src="/home/athlet/Desktop/сайт/images/HSL.jpg">
+												<ul><li>Оттенок градус цветового круга 0-360 RED(0)/GREEN(120)/BLUE(240)</li></ul>
+												<ul><li>Насыщенность (интенсивность цвета)% зн-е: 0% оттенок серого/ 100% полный цвет</li></ul>
+												<ul><li>Яркость (кол-во света, хотите дать цвету) тоже %:ЧЕРНЫЙ(%)/НИ СВЕТЛЫЙ,НИ ТЕМНЫЙ(50%)/БЕЛЫЙ(100%)</li></ul>
+				<ul><li>HSL(HUE SATURATION LIGHTNESS) Colors Оттенок Насыщенность Яркость: hsl (0,100%,50%)</li></ul>
+				<ul><li>HSLA (HUE SATURATION LIGHTNESS ALPHA) Colors</li></ul>
+												<h2>Параметр альфа - это число от 0,0 (полностью прозрачное), до 1,0 (совсем непрозрачно)</h2>
+						<h2>HWB</h2>
+						<img src="/home/athlet/Desktop/сайт/images/HWB.jpg">
+						<ul>
+						<li><pre>LAB - это цветовое пространство, доступ к которому возможен в таких программах, как Photoshop, и рекомендуется, если вы хотите, чтобы цвет на экране выглядел так же, как, скажем, напечатанный на футболке.
+						Он использует три оси: яркость, за которой следуют ось a (от зеленого к красному) и ось b (от синего к желтому).</li></pre>
+						<li><pre>LCH означает яркость, цветность и оттенок.
+						Как и в случае с LAB, яркость может быть в процентах(%), превышающих 100%.
+						Аналогично HSL, оттенок может быть в диапазоне от 0 до 360.
+						Цветность представляет собой количество цвета, и мы можем думать о ней как о чем-то подобном насыщенности в HSL</li></pre>
+						</ul>
+<h2>Изменение шрифта:</h2>
+<ul><li>Атрибут color: p color="цвет"</li></ul>
+<ul><li>Тэг font с атрибутом color: font {color:"цвет"} </li></ul>
+<ul><li>Атрибут style он же Text Color: p style="color:"цвет"</li></ul>
+<ul><li>Атрибут style в тэге HEAD: style font {color:"цвет"} style </li></ul>
+<ul><li>Классы CSS:<br></li></ul>
+<ul><li>назначаем в ф-ле сss класс: .red-text{color:цвет"}</li></ul>
+<ul><li>в HTML указываем class в тэге: p class="red.text"</li></ul>
+<ul><li>JavaScrip: style.color</li></ul>
+<ul><li>Внешнего файла CSS</li></ul>
+	</body>
+</html>

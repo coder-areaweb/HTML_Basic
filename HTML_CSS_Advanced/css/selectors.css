@@ -1,0 +1,39 @@
+body {
+    font-size:25px;
+}
+p {
+    color:red;
+}
+span {
+    color:green;
+}
+
+#list_1 {
+    color:blue;
+}
+#list_3 {
+    color:orange;
+}
+.list_1 {
+    font-weight:bold;
+}
+
+.form_1 input[type="text"] {
+    color:red;
+}
+
+div.div_1 p span {
+    color:green;
+}
+.block > p {
+    color:orange;
+    font-size:16px;
+}
+
+.comb_1 p + span {
+    color:orange;
+}
+
+.comb_2 p ~ span {
+    color:orange;
+}

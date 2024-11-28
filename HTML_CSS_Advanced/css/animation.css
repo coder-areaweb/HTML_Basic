@@ -1,0 +1,65 @@
+.block_1 {
+    background: red;
+    width:100px;
+    height:100px;
+    /*transition-duration:2s;*/
+    /*transition-property: background;*/
+    /*transition-timing-function:steps(20);*/
+    transition:2s;
+}
+.block_1:hover {
+    background:blue;
+    width:100%;
+}
+.block_2 {
+    width:100px;
+    height:100px;
+    border:4px solid;
+    /*animation-name:color;*/
+    /*animation-duration:6s;*/
+    /*animation-iteration-count:2;*/
+    animation:color 6s infinite;
+}
+@keyframes color {
+    0% {
+        border-color: red;
+        background:blue;
+    }
+    20% {
+        border-color:blue;
+        background:red;
+        border-radius:100%;
+    }
+    40% {
+        border-color:orange;
+        background: green;
+        border-radius:0;
+    }
+    60% {
+        border-color:red;
+        background:gray;
+        border-radius:100%;
+    }
+    100% {
+        border-color: green;
+        background:#000;
+    }
+}
+
+.block_3 {
+    width:100px;
+    height:100px;
+    border-radius:100%;
+    background:green;
+    position: absolute;
+    animation:jump 2s infinite alternate;
+}
+
+@keyframes jump {
+    from {
+        top:0;
+    }
+    to {
+        top:100px;
+    }
+}

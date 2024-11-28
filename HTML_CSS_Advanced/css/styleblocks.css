@@ -1,0 +1,37 @@
+p {
+    border:1px solid; /* dotted, dashed, groove, ridge*/
+    /* border-bottom:5px dotted green; */ /* Задает ширину, стиль и цвет нижней границы (border-top, border-right, border-bottom, border-left)*/
+    /* border-color: red blue orange green; */ /* Задает цвет границы для каждой стороны начиная с верхней */
+    /* border-width: 2px 5px 10px 4px; */ /* Задает толщину границы для каждой стороны начиная с верхней */
+    /* border-style: solid dotted dashed groove; */ /* Задает стиль границы для каждой стороны начиная с верхней */
+    margin: 0; /* Убирает отступы между абзацами тега p */
+}
+span {
+    border:1px solid;
+    width:100px;
+    height:100px;
+    margin:10px;
+    padding:10px;
+    display:block;
+}
+.block {
+    border:1px solid;
+    width:500px;
+    height:100px;
+    border-radius:10px;
+    /* border-radius: 10px 5px 8px 12px */ /* Задает радиус закругления для каждого угла начиная с верхнего левого */
+    padding:20px 10px; /* Тоже, что и padding: 20px 10px 20px 10px*/ 
+    box-sizing:border-box;
+    margin: 20px;
+    margin: 0 auto;
+    overflow:auto;
+    box-shadow:5px 5px 5px rgba(0,0,0,0.5);
+}
+.inline {
+    border:1px solid;
+    display:inline;
+    width:200px;
+    height:40px;
+    padding:10px;
+    margin:10px;
+}

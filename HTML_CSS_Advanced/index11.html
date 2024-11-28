@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Моя первая HTML-страница</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="моя страница, html-страница, web-документ">
+	<meta name="description" content="моя первая html-страница">
+	<link rel="shortcut icon" type="image/png" href="css.png" />
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/font.css"/>
+  <style>
+      span {
+          color:green;
+          font-size:20px;
+      }
+  </style>
+</head>
+	<body>
+	<h2>Методы определения стилей (Стилизация CSS)</h2>
+	<ul>
+	<li><Связывание (Linking) или ГЛОБАЛЬНЫЙ (подключение к file style.css)</li>
+	<p>link rel="styledheet" type="text/css" href="name.css"</p>
+	<li>Встраивание(Embended)</li>
+	<p>style type="text/css"</p><br>
+	<p>p {<br>
+	color:red <br>
+}<br>
+style
+</p><br>
+	<li>Вложение(Inline)</li>
+	<p>style="color:name"; background="#f0f"</p><br>
+	<p>p(атрибут) style color:name (декларация)  </p><br>
+	<li>Импорт(Import)</li>
+	<p>@import url('file name css')</p>
+	<li>удобно для разделения файлов и правил</li>
+	</ul>
+	<ul>
+		<li>Глобальный в элементе head</li>
+		<p>head</p>
+		<p>style and /style </p>
+		<p>/head</li>
+		<li>Ставиться только в описании HEAD</p>
+	</ul>
+  <h1>Мой первый текстовый заголовок</h1><hr>
+  <p>Мой первый текстовый абзац</p><hr>
+  <span>Текст с глобальным стилем CSS</span><hr><br>
+  <span style="color: blue; font-size:35px;">Текст со встроенным стилем CSS</span><hr><br>
+	<h2>Подключение встроенного стиля при помощи скрипта (делается по правилу)</h2>
+<h3><font color="red" size="3">напримере style attribute elements HTML doc смотри ниже:</h3></font>
+  <span style="color:purple;">Ваша оценка 5</span><br>
+  <span style="color:orange;">Ваша оценка 2</span>
+	</body>
+</html>

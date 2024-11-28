@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Моя первая HTML-страница</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="моя страница, html-страница, web-документ">
+	<meta name="description" content="моя первая html-страница">
+	<link rel="shortcut icon" type="image/png" href="css.png" />
+	<link rel="stylesheet" type="text/css" href="css/psedoclass.css"/>
+</head>
+	<body>
+  <h2>Псевдоклассы</h2>
+  <h3>:focus</h3>
+  <form class="form_1">
+      <input type="text"/>
+  </form>
+
+  <h3>:checked</h3>
+  <form class="form_2">
+      <div>
+          <input type="checkbox"/>
+          <label>Первый пункт</label>
+      </div>
+      <div>
+          <input type="checkbox"/>
+          <label>Второй пункт</label>
+      </div>
+  </form>
+
+  <h3>:link</h3>
+  <a href="reply.html">Непосещенная ссылка</a>
+
+  <h3>:visited</h3>
+  <a href="http://rambled.ru" target="_blank">Посещенная ссылка</a>
+
+  <h3>:active</h3>
+  <div class="block"></div>
+
+  <h3>:disabled/:enabled</h3>
+  <form class="form_3">
+      <input type="text" disabled/>
+      <input type="text"/>
+      <input type="text"/>
+  </form>
+
+  <h3>:not</h3>
+  <div class="block_1">
+      <p class="title">Первый абзац</p>
+      <p>Второй абзац</p>
+      <p class="title">Третий абзац</p>
+  </div>
+
+  <form class="form_4">
+      <input type="text"/>
+      <input type="text"/>
+      <input type="password"/>
+      <input type="submit"/>
+  </form>
+
+  <h2>Псевдоклассы отношений</h2>
+  <h3>:first-child</h3>
+  <div class="block_2">
+      <p>Первый</p>
+      <p>Второй</p>
+      <p>Третий</p>
+      <p>Четвертый</p>
+      <p>Пятый</p>
+      <p>Шестой</p>
+      <p>Седьмой</p>
+      <p>Восьмой</p>
+      <p>Девятый</p>
+      <p>Десятый</p>
+  </div>
+
+  <h2>Псевдоэлементы</h2>
+  <h3>:first-letter</h3>
+  <div class="block_3">
+      <p>Мой первый текстовый абзац</p>
+  </div>
+
+  <h3>:first-line</h3>
+  <div class="block_4">
+      <p>Мой первый текстовый абзац Мой первый текстовый абзац Мой первый текстовый абзац Мой первый текстовый абзац</p>
+  </div>
+
+  <h3>:before/:after</h3>
+  <div class="block_5">
+      <p>Мой первый текстовый абзац</p>
+  </div>
+	</body>
+</html>

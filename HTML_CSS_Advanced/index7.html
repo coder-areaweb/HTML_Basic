@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Моя первая HTML-страница</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="моя страница, html-страница, web-документ">
+	<meta name="description" content="моя первая html-страница">
+	<link rel="shortcut icon" type="image/png" href="html.png" />
+</head>
+	<body>
+  <form action="" method="GET" enctype="mulipart/formdata">
+  <fieldset>
+  <legend>Учетные данные:</legend>
+      <p>
+          <label>Ваше имя:</label>
+          <input type="text" name="name" value="Николай"/>
+      </p>
+      <p>
+          <label>Пароль:</label>
+          <input type="password" name="password"/>
+      </p>
+  </fieldset>
+  <fieldset>
+  <legend>Дополнительные данные:</legend>
+      <p>
+          <label>Заблокированное:</label>
+          <input type="text" name="block" value="Поле заблокированое" disabled/>
+      </p>
+      <p>
+          <label>Незаблокированное:</label>
+          <input type="text" name="read" value="Поле заблокированое" readonly/>
+      </p>
+      <p>
+          <label>Загрузите файл:</label>
+          <input type="file" name="file" multiple/>
+      </p>
+      <p>
+          <label>Ваша любимая страна:</label>
+          <input type="text" name="country" list="сountry_name"/>
+          <datalist id="сountry_name">
+              <option>Китай</option>
+              <option>Франция</option>
+              <option>Испания</option>
+              <option>Германия</option>
+          </datalist>
+      </p>
+      <p>
+          <label>Укажите количество:</label>
+          <input type="number" name="number" min="0" max="30"/>
+      </p>
+      <p>
+          <label>Укажите диапазон:</label>
+          <input type="range" name="range" min="0" max="50" step="5"/>
+      </p>
+      <p>
+          <label>Выберите дату:</label>
+          <input type="date" name="date"/>
+      </p>
+      <p>
+          <label>Выберите цвет:</label>
+          <input type="color" name="color"/>
+      </p>
+      <p>
+          <label>Скрытый блок:</label>
+          <input type="hidden" name="user_id"/>
+      </p>
+      <p>
+          <label>Комментарий:</label>
+          <textarea name="comment"></textarea>
+      </p>
+      <select name="products" size="3">
+      <optgroup label="Фрукты">
+          <option>Яблоки</option>
+          <option>Груши</option>
+          <option>Апельсины</option>
+      </optgroup>
+      <optgroup label="Овощи">
+          <option selected>Огурцы</option>
+          <option>Помидоры</option>
+          <option>Кабачки</option>
+      </optgroup>
+      </select>
+
+      <p>
+          <label>Выберите один или несколько вариантов:</label>
+
+          <p>
+              <label for="check1">Вариант 1</label>
+              <input type="checkbox" name="check1" id="check1" value="чек1" checked/>
+          </p>
+          <p>
+              <label for="check2">Вариант 2</label>
+              <input type="checkbox" name="check2" id="check2" value="чек2"/>
+          </p>
+          <p>
+              <label for="check3">Вариант 3</label>
+              <input type="checkbox" name="check3" id="check3" value="чек3"/>
+          </p>
+      </p>
+
+      <p>
+          <label>Самый популярный иностранный язык:</label>
+
+          <p>
+              <label for="lang1">английский</label>
+              <input type="radio" name="lang" id="lang1" value="англ" checked/>
+          </p>
+          <p>
+              <label for="lang2">испанский</label>
+              <input type="radio" name="lang" id="lang2" value="исп"/>
+          </p>
+          <p>
+              <label for="lang3">итальянский</label>
+              <input type="radio" name="lang" id="lang3" value="итал"/>
+          </p>
+      </p>
+
+      <p>
+          <label>Выберите фрукт:</label>
+
+          <p>
+              <label for="fruit1">огурец</label>
+              <input type="radio" name="fruit" id="fruit1" />
+          </p>
+          <p>
+              <label for="fruit2">помидор</label>
+              <input type="radio" name="fruit" id="fruit2"/>
+          </p>
+          <p>
+              <label for="fruit3">апельсин</label>
+              <input type="radio" name="fruit" id="fruit3"/>
+          </p>
+      </p>
+			<p>
+					<label>Поле для поиска</label>
+					<input type="search"/>
+			</p>
+      </fieldset>
+      <input type="submit" value="Отправить"/>
+      <input type="reset" value="Сбросить"/>
+
+  </form>
+	</body>
+</html>

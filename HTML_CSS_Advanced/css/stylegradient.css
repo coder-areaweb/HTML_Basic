@@ -1,0 +1,27 @@
+.grad_1 {
+    /*background:linear-gradient(to right, red, red 20px, blue 20px, blue 50px, orange 50px); */
+    background:linear-gradient(to right, red, blue);
+    border:1px solid;
+    height:280px;
+    width:280px;
+}
+.grad_2 {
+    background:radial-gradient(at top left, red, blue);
+    border:1px solid;
+    height:280px;
+    width:280px;
+}
+.grad_3 {
+    background:radial-gradient(circle at 65% 15%, #fff, red);
+    border-radius:100%;
+    height:280px;
+    width:280px;
+}
+.grad_4 {
+    background:repeating-radial-gradient(circle, red, red 20px, transparent 20px, transparent 40px);
+    border-radius:100%;
+    height:600px;
+    width:600px;
+}
+
+

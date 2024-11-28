@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Моя первая HTML-страница</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="моя страница, html-страница, web-документ">
+	<meta name="description" content="моя первая html-страница">
+	<link rel="shortcut icon" type="image/png" href="css.png" />
+	<link rel="stylesheet" type="text/css" href="css/selectors.css"/>
+</head>
+	<body>
+  <h2>Селектор тегов</h2>
+  <p>Мой первый текстовый абзац</p>
+  <p>Мой второй текстовый абзац</p>
+  <p>Мой третий текстовый абзац</p>
+  <span>Мой четвертый текстовый абзац</span>
+
+  <h2>Селектор идентификатора(id)</h2>
+  <p id="list_1">Мой первый текстовый абзац</p>
+  <p id="list_2">Мой второй текстовый абзац</p>
+  <p id="list_3">Мой третий текстовый абзац</p>
+
+  <h2>Селектор класса(class)</h2>
+  <p class="list_1">Мой первый текстовый абзац</p>
+  <p class="list_1">Мой второй текстовый абзац</p>
+  <p class="list_3">Мой третий текстовый абзац</p>
+
+  <h2>Селектор параметров атрибута</h2>
+  <form class="form_1">
+      <div>
+          <input type="text" name="name" />
+      </div>
+      <div>
+          <input type="text" name="login" />
+      </div>
+      <div>
+          <input type="password" name="pass"/>
+      </div>
+      <input type="submit" value="Отправить"/>
+  </form>
+
+  <h2>Контекстный селектор</h2>
+  <div class="div_1">
+      <p><span>Абзац с текстом</span></p>
+  </div>
+
+  <h2>Дочерний селектор</h2>
+  <div class="block">
+      <p>Абзац с текстом</p>
+          <div>
+              <p>Второй абзац</p>
+              <p>Третий абзац</p>
+          </div>
+  </div>
+
+  <h2>Комбинированые селекторы</h2>
+  <h3>Соседние</h3>
+
+  <div class="comb_1">
+      <p>Абзац с текстом</p>
+      <span>Следующий за абзацем текст</span>
+      <span>Следующий за абзацем текст</span>
+  </div>
+
+
+  <h3>Родственные</h3>
+
+  <div class="comb_2">
+      <p>Абзац с текстом</p>
+      <span>Следующий за абзацем текст</span>
+      <span>Следующий за абзацем текст</span>
+      <span>Следующий за абзацем текст</span>
+      <b>Жирный текст</b>
+      <span>Следующий за абзацем текст</span>
+  </div>
+	</body>
+</html>
